@@ -13,6 +13,7 @@ padding:1.5em;
 
 }
 body {
+
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif , Microsoft JhengHei;
   position: relative;
   width: 100%;
@@ -103,6 +104,7 @@ a {
           color: white; } }
 
 .masthead {
+
   display: table;
   width: 100%;
   height: auto;
@@ -132,6 +134,7 @@ a {
         font-size: 22px; } }
 
 .btn-circle {
+  
   font-size: 26px;
   width: 55px;
   height: 55px;
@@ -154,6 +157,8 @@ a {
   padding-bottom: 150px; }
 
 .download-section {
+  max-width: 100%;
+    height: auto;
   color: white;
   background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
   background-color: black;
