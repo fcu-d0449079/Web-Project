@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+	<meta charset="{CHARSET}">
 
 
     <title>Qalang Smangus - 司馬庫斯</title>
@@ -192,6 +193,22 @@
 	<h2></h2>
     <!-- Map Section -->
     <div id="map"></div>
+	
+    留言區域：<textarea id="content" type="text"></textarea><br />
+    顯示留言區域：<div id="display_area"></div>
+        <input value="提交" type="button" id="btn" />
+		
+	<script>
+        window.onload=function(){
+        var display_area = document.getElementById("display_area");
+        var btn = document.getElementById("btn");
+        btn.onclick = function(){
+            var content_val = document.getElementById("content").value;
+            display_area.append(content_val,"\n");
+        };
+    }
+    </script>
+	<h2></h2>
 	
 	<script>
       function initMap() {
