@@ -38,28 +38,30 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#history">歷史</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#feature">特色</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#view">景物</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#video">影片</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#traffic">交通</a>
-			 </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#map">地圖</a>
-			 </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#opinion">留言板</a>
-			 </li>
+            <ul class="nav-item dropdown">
+              <a class="nav-link js-scroll-trigger"  href="#">特色介紹</a>
+                <ul class="dropdown-content">
+                 <li><a class="nav-link js-scroll-trigger" href="#view">景物</a></li>
+                 <li><a class="nav-link js-scroll-trigger" href="#history">歷史</a></li>
+               </ul>
+           </ul>
+           <ul class="nav-item dropdown">
+              <a class="nav-link js-scroll-trigger" href="#">旅遊導覽</a>
+                <ul class="dropdown-content">
+            <li><a class="nav-link js-scroll-trigger" href="#traffic">交通</a></li>
+            <li><a class="nav-link js-scroll-trigger" href="#video">影片</a></li>
+            <li><a class="nav-link js-scroll-trigger" href="#map">地圖</a></li>
+         </ul>
+            </ul>
+           <ul class="nav-item dropdown">
+              <a class="nav-link js-scroll-trigger" href="#">互動交流</a>
+                <ul class="dropdown-content">
+            <li><a class="nav-link js-scroll-trigger" href="#opinion">留言板</a></li>
+            <li><a class="nav-link js-scroll-trigger" href="#donate">捐贈與贊助</a></li>
+         </ul>
+			      </ul>
           </ul>
+
         </div>
       </div>
     </nav>
@@ -249,10 +251,10 @@
           <div class="row">
             <div class="col-lg-8 mx-auto">
             	<ul class="list-inline banner-social-buttons">
-            	 <li class="list-inline-item">
+            	 <li class="list-inline-item ">
                 <div class="btn btn-default btn-lg">
-				留言區域：<input id="msg" type="text" size="40" value="">
-				<input value="提交" type="button" id="btn" />
+				          留言區域：<input id="msg" type="text" size="40" value="">
+			         	<input value="提交"  type="button" id="btn" />
                 <div id="msg_c"></div>
                 </div>
               </li>
@@ -262,7 +264,45 @@
        </div> 
       </section>
 
-
+    <section id="donate" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+              <form>
+                          <table width="100%" cellspacing="30" border="1px solid #ddd;">
+                          <tr>
+                            <td>姓名</td>
+                            <td><input type="text" size="40" name="account" placeholder="請輸入您的姓名"></td><br>
+                          </tr>
+                            <tr>
+                            <td>電話</td>
+                            <td><input type="text" size="40" placeholder="請輸入您的電話"><br></td>
+                            </tr>
+                          <tr>
+                            <td>電子郵件</td>
+                            <td><input type="text" size="40" placeholder="請輸入您的電子郵件"><br></td>
+                          </tr>
+                          <td>欲贊助、捐贈內容</td>
+                            <td><textarea cols="38" rows="5" placeholder="請輸入內容"></textarea><br></td>
+                          </tr>
+                          </table>
+                          <div class="btn btn-default btn-lg">提交</div>
+                        </form> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--新增格式使用
+    <section id="donate" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+          
+          </div>
+        </div>
+      </div>
+    </section>
+    -->
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
