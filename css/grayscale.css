@@ -4,12 +4,8 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
-
 table {
-  float : center;
-}
-td{
-  float : center;
+  float : left;
 }
 
  .dropdown{
@@ -45,7 +41,7 @@ ul {
         padding: 0;
         list-style: none;
     }
-    ul.dropdown a:hover { /* 滑鼠滑入按鈕變色*/
+    ul.dropdown a:hover { 
         background-color: #2E8B57;
         color: #fff;
     }

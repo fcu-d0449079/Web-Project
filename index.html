@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-	
+	 
 
 
     <title>Qalang Smangus - 司馬庫斯</title>
@@ -29,7 +29,7 @@
   	
 <marquee class="GeneratedMarquee" direction="left" scrollamount="11" behavior="scroll">今日消息</marquee>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-image: url(img/taiya.png);">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Qalang Smangus - 司馬庫斯</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +61,6 @@
          </ul>
 			      </ul>
           </ul>
-
         </div>
       </div>
     </nav>
@@ -71,7 +70,7 @@
       <div class="intro-body">
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
+            <div class="col-lg-8 mx-auto slideshow">
               <h1 class="brand-heading">Smangus</h1>
               <p class="intro-text">上帝的部落：司馬庫斯<br>台灣最深山的原住民部落</p>
               <a href="#history" class="btn btn-circle js-scroll-trigger">
@@ -182,7 +181,7 @@
 		  <a>   2. 中型巴士：<br></a>
    	  	  <font color="yellow">   可上山時間：15:00 - 15:20（上山中巴不得在其他時間越過泰崗岔路口進入司馬庫斯產業道路）<br>
     	  可下山時間：13:40 - 14:00（下山中巴不得在其他時間從司馬庫斯部落出發）<br></font>
-   	      <font color="red">    其他時間皆禁止上下山。<br><br><br><br><br><br><br></font>
+   	      <font color="red" size="20px">    其他時間皆禁止上下山。<br><br><br><br><br><br><br></font>
        </div>
 	   </div>
      </div>
@@ -269,7 +268,8 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
               <form>
-                          <table width="100%" cellspacing="30" border="1px solid #ddd;">
+                          <div style >
+                          <table width="100%" cellspacing="30" padding=2px border="1px solid #ddd">
                           <tr>
                             <td>姓名</td>
                             <td><input type="text" size="40" name="account" placeholder="請輸入您的姓名"></td><br>
@@ -283,11 +283,21 @@
                             <td><input type="text" size="40" placeholder="請輸入您的電子郵件"><br></td>
                           </tr>
                           <td>欲贊助、捐贈內容</td>
-                            <td><textarea cols="38" rows="5" placeholder="請輸入內容"></textarea><br></td>
-                          </tr>
+                            <td><textarea cols="41%" rows="5" placeholder="請輸入內容"></textarea><br></td>
+                          </tr> 
                           </table>
-                          <div class="btn btn-default btn-lg">提交</div>
-                        </form> 
+                      <div class="btn btn-default btn-lg">
+                          <a href="#">提交</a>
+                      </div>
+                        </div>
+                          <div>
+                           <img src="img/p1.png" style="float: left;" width="50%">
+                           <img src="img/p2.png" style="float: left;" width="50%">
+                           <img src="img/p3.png" style="float: left;" width="50%">
+                           <img src="img/p3.png" style="float: left;" width="50%">
+                      </div>  
+                 </form>
+                        
           </div>
         </div>
       </div>
@@ -303,6 +313,14 @@
       </div>
     </section>
     -->
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+       <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slideshow').cycle({
+                 fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+            });
+        });
+    </script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
